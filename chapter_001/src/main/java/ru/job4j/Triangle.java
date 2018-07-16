@@ -24,7 +24,7 @@ public class Triangle {
         if (this.exist(ab, ac, bc)) {
 
             rsl = Math.sqrt(p * (p - ab) * (p - bc) * (p - ac)); //вместо многоточия нужно написать формулу Герона с подставленными переменные ab, ac, dc, p.
-                  }
+        }
         return rsl;
     }
 
