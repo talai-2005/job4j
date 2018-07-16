@@ -30,7 +30,7 @@ public class Triangle {
 
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
-     *
+     * <p>
      * Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
      *
      * @param ab Длина от точки a b.
@@ -39,8 +39,7 @@ public class Triangle {
      * @return
      */
     private boolean exist(double ab, double ac, double bc) {
-        if (ab < bc+ac && bc<ab+ac && ac<ab+bc)  {
-            return true;
-        } else return false;
+        return (ab < bc + ac && bc < ab + ac && ac < ab + bc);
+        }
     }
-}
+

@@ -34,7 +34,7 @@ public class Point {
     public static void main(String[] args) {
         Point a = new Point(0, 1);
         Point b = new Point(2, 5);
-        Point c = new Point (4, 6);
+        Point c = new Point(4, 6);
         System.out.println("Расстояние между точками А и В : " + a.distanceTo(b));
         double result1 = a.distanceTo(c);
         System.out.println("Расстояние между точками А и C : " + a.distanceTo(c));
