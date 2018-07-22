@@ -5,6 +5,7 @@ public class Factorial {
     int calc(int n) {
         for (int i = 1; i <= n; i++) {
             result = result * i;
-        } return result;
+        }
+        return result;
     }
 }
