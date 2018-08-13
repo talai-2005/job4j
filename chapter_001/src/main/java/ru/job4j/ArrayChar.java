@@ -16,13 +16,12 @@ public class ArrayChar {
      * @return если слово начинаеться с префикса
      */
     public boolean startWith(String prefix) {
-        boolean result = false;
+        boolean result = true;
         char[] value = prefix.toCharArray();
-        for (int i = 0; i < value.length;i++) {
-            for (int a = 0; a < data.length; a++)
-                if (value[i] == data[a]) {
-                    result = true;
-                    break;
+        for (int i = 0; i < value.length; i++) {
+                 if (value[i] != data[i]) {
+                     result = false;
+                     break;
                 }
         }
         return result;
