@@ -1,27 +1,24 @@
 package ru.job4j;
-
 import java.util.Arrays;
-
 public class BubbleSort {
-    private int[] mas;
-
+    private int[] arr;
     public int[] sort(int[] array) {
-        mas = array;
-        boolean isSorted = false;
-        int buf;
-        while (!isSorted) {
-            isSorted = true;
-            for (int i = 0; i < mas.length-1; i++) {
-                if (mas[i] > mas[i + 1]) {
-                    isSorted = false;
-                    buf = mas[i];
-                    mas[i] = mas[i + 1];
-                    mas[i + 1] = buf;
-
+        arr = array;
+        for (int i = 0; i < arr.length; i++) {
+            int min = arr[i];
+            int min_i = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[j] < min) {
+                    min = arr[j];
+                    min_i = j;
                 }
             }
-        }
-
-        return mas;
+            if (i != min_i) {
+                int tmp = arr[i];
+                arr[i] = arr[min_i];
+                arr[min_i] = tmp;
+            }
+        } return arr;
     }
 }
+
