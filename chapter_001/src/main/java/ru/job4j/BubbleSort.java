@@ -7,7 +7,7 @@ public class BubbleSort {
         for (int i = 0; i < arr.length; i++) {
             int min = arr[i];
             int min_i = i;
-            for (int j = i+1; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 if (arr[j] < min) {
                     min = arr[j];
                     min_i = j;
