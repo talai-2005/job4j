@@ -11,8 +11,8 @@ public class ArrayDuplicateTest {
     public void duplicateCheck() {
         ArrayDuplicate duplicate = new ArrayDuplicate();
         String[] input = new String[]{"Привет", "Мир", "Привет", "Супер", "Мир"};
-        String[] expectedArray = new String[]{"Супер", "Мир", "Привет"};
+        String[] expectedArray = new String[]{"Привет", "Мир", "Супер"};
         String [] resultArray = duplicate.remove(input);
-        assertThat(resultArray, arrayContainingInAnyOrder(expectedArray, input));
+        assertThat(resultArray, arrayContainingInAnyOrder(expectedArray, resultArray));
      }
 }
