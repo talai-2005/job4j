@@ -13,6 +13,6 @@ public class ArrayDuplicateTest {
         String[] input = new String[]{"Привет", "Мир", "Привет", "Супер", "Мир"};
         String[] expectedArray = new String[]{"Привет", "Мир", "Супер"};
         String [] resultArray = duplicate.remove(input);
-        assertThat(resultArray, arrayContainingInAnyOrder(expectedArray, resultArray));
+        assertThat(resultArray, arrayContainingInAnyOrder(expectedArray));
      }
 }
